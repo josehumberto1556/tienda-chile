@@ -16,7 +16,7 @@ app.use(express.static(__dirname+"/public/"))
 app.use(cors());
 app.use(express.json());
 
-
+//app.use(express.static('uploads'))
 
 app.get('/', (req,res) => {
    // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
@@ -24,11 +24,47 @@ app.get('/', (req,res) => {
 });
 
 
-app.get('/', (req,res) => {
+app.get('/ModuloUsuarios', (req,res) => {
    // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
   // res.render("index",{titulo:"titulo dinamico"})
-   res.send("me gusta sorangel")
+   res.render("usuarios/Usuarios")
 });
+
+app.get('/registrarUsuario', (req,res) => {
+   // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
+  // res.render("index",{titulo:"titulo dinamico"})
+   res.render("usuarios/registrarUsuario")
+})
+
+app.get('/editarUsuario', (req,res) => {
+   // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
+  // res.render("index",{titulo:"titulo dinamico"})
+   res.render("usuarios/editarUsuario")
+})
+
+
+//modulo categorias
+
+app.get('/ModuloCategoria', (req,res) => {
+   // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
+  // res.render("index",{titulo:"titulo dinamico"})
+   res.render("categoria/categoria")
+});
+
+app.get('/registrarCategoria', (req,res) => {
+   // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
+  // res.render("index",{titulo:"titulo dinamico"})
+   res.render("categoria/registrarCategoria")
+})
+
+app.get('/editarCategoria', (req,res) => {
+   // res.send('Backend con NodeJS - Express + CRUD API REST + MySQL');
+  // res.render("index",{titulo:"titulo dinamico"})
+   res.render("categoria/editarCategoria")
+})
+
+
+
 
 //routerApi(app);
 

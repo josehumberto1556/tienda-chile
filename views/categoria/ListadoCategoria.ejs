@@ -1,0 +1,48 @@
+<%-include("../tabla")%>
+
+
+         <div class="card">
+                <h5 class="card-header">Listado de Categorias</h5>
+					<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-md-offset-2">
+				<div class="card">
+					<div class="card-body d-flex justify-content-between align-items-center">
+						<div></div>
+						<a href="/registrarCategoria" class="btn btn-primary btn-sm">Crear</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+				  
+                    <thead>
+					
+                      <tr class="text-nowrap">
+                        <th>#</th>
+                        <th>Nombre Categoria</th>
+                        <th>Editar</th>
+						<th>Eliminar</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Table cell</td>
+                        <td>
+						<a href="/EditarCategoria" class="btn btn-primary btn-sm">Editar</a>
+						</td>
+                        <td><a href="/registrarUsuario" class="btn btn-danger btn-sm">Eliminar</a></td>
+                      
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+<%-include("../FinTabla")%>
+	

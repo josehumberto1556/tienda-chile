@@ -30,14 +30,20 @@ const UsuariosSchema = {
         type: DataTypes.STRING,
         field: 'clave'
     },
-    whatsap:{
+    correo:{
         allowNull: true,
         type: DataTypes.INTEGER,
-        field: 'whtasap'
+        field: 'correo'
     },
+	codigoWhatsao:
+	{
+	   allowNull: true,
+        type: DataTypes.INTEGER,
+        field: 'codigo whtasap'	
+	}
     whatsap:{
         allowNull: true,
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         field: 'whtasap'
     }    
 }
